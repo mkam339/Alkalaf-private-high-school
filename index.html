@@ -3,58 +3,44 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>مدارس القلاف الأهلية | Al-Qallaf Private Schools</title>
-  <meta name="description" content="موقع مدارس القلاف الأهلية — تعليم متميز، بيئة محفزة، ومعلمون معتمدون." />
+  <title>مدارس القلاف الأهلية الثانوية | النسخة النهائية بروابط الأقسام</title>
+  <meta name="description" content="موقع مدارس القلاف الأهلية الثانوية — جميع الأقسام الأصلية موجودة، مع روابط للمدرسين والطلاب المتفوقين." />
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root{
-      --primary:#0E9F6E; /* أخضر أنيق */
-      --primary-600:#0B8059;
-      --primary-700:#096749;
-      --accent:#F59E0B;  /* ذهبي */
-      --text:#111827;    /* Slate-900 */
-      --muted:#6B7280;   /* Slate-500 */
+      --primary:#0E9F6E;
+      --accent:#F59E0B;
+      --text:#111827;
       --bg:#ffffff;
     }
     html,body{ height:100%; }
-    body{ font-family:'Tajawal', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; color:var(--text); background:var(--bg); }
-    /* تحسين اللمس والتمرير */
-    .hide-scrollbar{ scrollbar-width:none; }
-    .hide-scrollbar::-webkit-scrollbar{ display:none; }
-    /* لمعالجة الظلال اللطيفة */
+    body{ font-family:'Tajawal', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; color:var(--text); background:var(--bg); }
     .card-shadow{ box-shadow:0 10px 30px rgba(2,6,23,0.06); }
-    /* طبقة تدرج عند حواف السلايدر */
-    .edge-fade::before,.edge-fade::after{
-      content:""; position:absolute; top:0; bottom:0; width:60px; pointer-events:none; z-index:10;
-    }
-    .edge-fade::before{ right:0; background:linear-gradient(to left, rgba(255,255,255,0.95), rgba(255,255,255,0)); }
-    .edge-fade::after{ left:0;  background:linear-gradient(to right, rgba(255,255,255,0.95), rgba(255,255,255,0)); }
-    /* أزرار الأسهم فوق المسار */
-    .arrow-btn{ backdrop-filter:saturate(150%) blur(4px); }
   </style>
 </head>
 <body class="min-h-screen">
-  <!-- شريط علوي -->
+  <!-- رأس الموقع -->
   <header class="sticky top-0 z-40 bg-white/90 border-b border-gray-100 backdrop-blur">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3 select-none">
         <div class="w-10 h-10 rounded-2xl grid place-items-center" style="background:var(--primary); color:white;">
-          <!-- شعار بسيط (كتاب مفتوح) -->
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M3 6.5C3 5.11929 4.11929 4 5.5 4H10.5C11.8807 4 13 5.11929 13 6.5V19C13 17.6193 11.8807 16.5 10.5 16.5H5.5C4.11929 16.5 3 17.6193 3 19V6.5Z" fill="currentColor"/>
             <path d="M21 6.5C21 5.11929 19.8807 4 18.5 4H13.5C12.1193 4 11 5.11929 11 6.5V19C11 17.6193 12.1193 16.5 13.5 16.5H18.5C19.8807 16.5 21 17.6193 21 19V6.5Z" fill="currentColor"/>
           </svg>
         </div>
         <div>
-          <div class="text-xl font-extrabold tracking-wide" style="color:var(--primary)">مدارس القلاف الأهلية</div>
+          <div class="text-xl font-extrabold tracking-wide" style="color:var(--primary)">مدارس القلاف الأهلية الثانوية</div>
           <div class="text-xs text-gray-500">تعليم يهيّئ قادة المستقبل</div>
         </div>
       </a>
       <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a class="text-gray-700 hover:text-black" href="#hero">الرئيسية</a>
         <a class="text-gray-700 hover:text-black" href="#about">عن المدرسة</a>
         <a class="text-gray-700 hover:text-black" href="#programs">برامجنا</a>
         <a class="text-gray-700 hover:text-black" href="#teachers">المعلمون</a>
+        <a class="text-gray-700 hover:text-black" href="#honors">المتفوقون</a>
         <a class="text-gray-700 hover:text-black" href="#admissions">التسجيل</a>
         <a class="text-gray-700 hover:text-black" href="#contact">التواصل</a>
       </nav>
@@ -65,37 +51,28 @@
   </header>
 
   <!-- البطل -->
-  <section class="relative overflow-hidden">
+  <section id="hero" class="relative overflow-hidden">
     <div class="absolute inset-0 -z-10" aria-hidden="true" style="background: radial-gradient(1200px 600px at 80% -10%, rgba(14,159,110,0.18), rgba(14,159,110,0) 60%), radial-gradient(900px 500px at 10% -10%, rgba(245,158,11,0.12), rgba(245,158,11,0) 60%), linear-gradient(180deg, #ffffff, #ffffff)"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 grid lg:grid-cols-2 gap-10 items-center">
       <div>
-        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-6">بيئة تعليمية آمنة ومُلهمة، <span class="inline-block px-3 rounded-xl" style="background:rgba(14,159,110,0.1); color:var(--primary)">تُنمّي المهارات</span> والقيم.</h1>
-        <p class="text-gray-600 text-lg mb-8">نقدّم تعليماً نوعياً يعتمد على أحدث الأساليب، مع كوادر أكاديمية معتمدة ومرافق حديثة تدعم التعلّم النشط والابتكار.</p>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
+          ثانوية تُخرّج متفوقين <span class="inline-block px-3 rounded-xl" style="background:rgba(14,159,110,0.1); color:var(--primary)">جاهزين للجامعة</span>
+        </h1>
+        <p class="text-gray-600 text-lg mb-8">
+          برامج مسارات، دعم للقدرات والتحصيلي، ومعلمون معتمدون ببيئة تعليمية حديثة.
+        </p>
         <div class="flex flex-wrap gap-3">
           <a href="#admissions" class="rounded-2xl px-6 py-3 font-bold" style="background:var(--primary); color:#fff;">قدّم الآن</a>
-          <a href="#about" class="rounded-2xl px-6 py-3 font-bold border border-gray-200 hover:border-gray-300">تعرّف أكثر</a>
+          <a href="#programs" class="rounded-2xl px-6 py-3 font-bold border border-gray-200 hover:border-gray-300">تعرّف على المسارات</a>
         </div>
       </div>
       <div class="relative">
         <div class="aspect-[4/3] w-full rounded-3xl card-shadow overflow-hidden bg-white grid place-items-center border border-gray-100">
-          <!-- صورة توضيحية SVG (بديل عن الصور الفعلية) -->
           <svg viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" class="w-full h-full object-cover">
-            <defs>
-              <linearGradient id="g" x1="0" x2="1">
-                <stop offset="0%" stop-color="#E6F6F0"/>
-                <stop offset="100%" stop-color="#FFF7E6"/>
-              </linearGradient>
-            </defs>
-            <rect width="640" height="480" fill="url(#g)"/>
-            <g fill="#0E9F6E" opacity="0.25">
-              <circle cx="140" cy="120" r="60"/>
-              <circle cx="540" cy="180" r="80"/>
-              <circle cx="320" cy="360" r="90"/>
-            </g>
-            <g fill="#0E9F6E">
-              <rect x="140" y="220" width="360" height="24" rx="12"/>
-              <rect x="200" y="260" width="240" height="24" rx="12"/>
-            </g>
+            <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0%" stop-color="#E6F6F0"/><stop offset="100%" stop-color="#FFF7E6"/></linearGradient></defs>
+            <rect width="640" height="480" fill="url(#g)"/><g fill="#0E9F6E" opacity="0.25">
+              <circle cx="140" cy="120" r="60"/><circle cx="540" cy="180" r="80"/><circle cx="320" cy="360" r="90"/></g>
+            <g fill="#0E9F6E"><rect x="140" y="220" width="360" height="24" rx="12"/><rect x="200" y="260" width="240" height="24" rx="12"/></g>
           </svg>
         </div>
       </div>
@@ -107,22 +84,25 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-3 gap-8">
         <div class="lg:col-span-2">
-          <h2 class="text-2xl sm:text-3xl font-extrabold mb-4">عن مدارس القلاف الأهلية</h2>
-          <p class="text-gray-600 leading-8">تأسست مدارس القلاف الأهلية لتقديم تجربة تعليمية متكاملة تُراعي احتياجات طلابنا الأكاديمية والمهارية والقيمية. نوفّر بيئة آمنة، صفوفاً مزوّدة بالتقنيات الحديثة، ومعلّمين معتمدين يركزون على التعلم النشط وبناء الشخصية.</p>
+          <h2 class="text-2xl sm:text-3xl font-extrabold mb-4">عن مدارس القلاف الأهلية الثانوية</h2>
+          <p class="text-gray-600 leading-8">
+            نوفّر تجربة تعلّم متكاملة للمرحلة الثانوية مع مسارات تخصصية ودعم لاختبارات القياس والتحصيلي،
+            وفصول مزوّدة بالتقنيات الحديثة، وهيئة تدريس معتمدة.
+          </p>
         </div>
         <ul class="grid sm:grid-cols-3 gap-4">
           <li class="rounded-2xl p-5 border border-gray-100 card-shadow bg-white">
-            <div class="text-sm text-gray-500 mb-1">نسبة النجاح</div>
-            <div class="text-2xl font-extrabold" style="color:var(--primary)">+98%</div>
-            <div class="text-sm text-gray-500">في الاختبارات القياسية</div>
+            <div class="text-sm text-gray-500 mb-1">نسبة القبول الجامعي</div>
+            <div class="text-2xl font-extrabold" style="color:var(--primary)">+90%</div>
+            <div class="text-sm text-gray-500">خريجونا في جامعات مرموقة</div>
           </li>
           <li class="rounded-2xl p-5 border border-gray-100 card-shadow bg-white">
             <div class="text-sm text-gray-500 mb-1">الأنشطة</div>
             <div class="text-2xl font-extrabold" style="color:var(--primary)">+30</div>
-            <div class="text-sm text-gray-500">ناديًا وبرنامجاً</div>
+            <div class="text-sm text-gray-500">ناديًا وبرنامجًا</div>
           </li>
           <li class="rounded-2xl p-5 border border-gray-100 card-shadow bg-white">
-            <div class="text-sm text-gray-500 mb-1">المعلمون</div>
+            <div class="text-sm text-gray-500 mb-1">المعلّمون</div>
             <div class="text-2xl font-extrabold" style="color:var(--primary)">كوادر معتمدة</div>
             <div class="text-sm text-gray-500">خبرات محلية ودولية</div>
           </li>
@@ -131,148 +111,67 @@
     </div>
   </section>
 
-  <!-- برامجنا -->
+  <!-- البرامج (ثانوية فقط) -->
   <section id="programs" class="py-16 sm:py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl sm:text-3xl font-extrabold mb-8">برامجنا الأكاديمية</h2>
+      <h2 class="text-2xl sm:text-3xl font-extrabold mb-8">برامجنا الأكاديمية — المرحلة الثانوية فقط</h2>
       <div class="grid md:grid-cols-3 gap-6">
-        <article class="rounded-2xl border border-gray-100 bg-white p-6 card-shadow">
-          <div class="text-sm text-gray-500 mb-2">مراحل التأسيس</div>
-          <h3 class="font-extrabold text-lg mb-3">المرحلة الابتدائية</h3>
-          <p class="text-gray-600">تنمية المهارات الأساسية في القراءة والرياضيات والعلوم، مع برامج إثرائية ممتعة.</p>
+        <article class="rounded-2xl border border-gray-100 bg-white p-6 card-shadow md:col-span-2">
+          <div class="text-sm text-gray-500 mb-2">المسارات المتاحة</div>
+          <h3 class="font-extrabold text-lg mb-3">ثانوية مسارات</h3>
+          <ul class="list-disc pr-5 text-gray-700 space-y-1">
+            <li>مسارات تخصصية تناسب ميول الطلبة وقدراتهم.</li>
+            <li>تهيئة لاختبارات القدرات والتحصيلي والقبول الجامعي.</li>
+            <li>مشاريع تطبيقية ومهارات بحث وعرض وقيادة.</li>
+          </ul>
         </article>
         <article class="rounded-2xl border border-gray-100 bg-white p-6 card-shadow">
-          <div class="text-sm text-gray-500 mb-2">التمكين المعرفي</div>
-          <h3 class="font-extrabold text-lg mb-3">المرحلة المتوسطة</h3>
-          <p class="text-gray-600">ترسيخ المفاهيم وتطوير التفكير النقدي والعمل الجماعي ومهارات البحث.</p>
-        </article>
-        <article class="rounded-2xl border border-gray-100 bg-white p-6 card-shadow">
-          <div class="text-sm text-gray-500 mb-2">الاستعداد للجامعة</div>
-          <h3 class="font-extrabold text-lg mb-3">المرحلة الثانوية</h3>
-          <p class="text-gray-600">مسارات تخصصية، وتهيئة لاختبارات القبول والمهارات المستقبلية.</p>
+          <div class="text-sm text-gray-500 mb-2">الدعم الأكاديمي</div>
+          <h3 class="font-extrabold text-lg mb-3">تقوية واستعداد</h3>
+          <p class="text-gray-600">حصص دعم لبنوك أسئلة وتقييمات دورية وتتبّع تقدّم الطلاب.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- المعلمون (سلايدر بطاقات) -->
+  <!-- قسم المعلمون: رابط فقط -->
   <section id="teachers" class="py-16 sm:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-baseline justify-between gap-4 mb-6">
-        <h2 class="text-2xl sm:text-3xl font-extrabold">معلمونا</h2>
-        <p class="text-sm text-gray-500">مرّر بالأسهم أو بالسحب على الجوال</p>
-      </div>
-
-      <div class="relative edge-fade">
-        <!-- أزرار الأسهم -->
-        <button id="btnNext" type="button" class="arrow-btn absolute right-2 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-2xl grid place-items-center border border-gray-200 bg-white/90 hover:bg-white card-shadow" aria-label="التالي">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 6l6 6-6 6" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <button id="btnPrev" type="button" class="arrow-btn absolute left-2 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-2xl grid place-items-center border border-gray-200 bg-white/90 hover:bg-white card-shadow" aria-label="السابق">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 6l-6 6 6 6" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-
-        <!-- المسار القابل للتمرير -->
-        <div id="teacherTrack" class="hide-scrollbar snap-x snap-mandatory overflow-x-auto overflow-y-visible scroll-smooth pr-4 pl-4">
-          <ul class="flex gap-4 min-w-full py-2">
-            
-            <!-- **** بطاقة معلم (انسخها وكررها وأدخل معلوماتك) **** -->
-            <li class="teacher-card snap-start shrink-0 w-[280px]">
-              <article class="h-full rounded-2xl border border-gray-100 bg-white card-shadow overflow-hidden">
-                <div class="aspect-[4/3] bg-gray-100 grid place-items-center">
-                  <!-- ضع رابط صورة المعلم هنا -->
-                  <img src="" alt="صورة المعلم" class="w-full h-full object-cover" onerror="this.remove(); this.parentElement.classList.add('bg-gradient-to-br','from-green-50','to-amber-50'); this.parentElement.innerHTML='<div class=\'text-sm text-gray-500\'>صورة المعلم</div>';" />
-                </div>
-                <div class="p-4">
-                  <h3 class="font-extrabold text-lg">اسم المعلم</h3>
-                  <p class="text-sm text-gray-500">المادة</p>
-                </div>
-              </article>
-            </li>
-            <!-- **** نهاية بطاقة معلم **** -->
-
-            <!-- أمثلة إضافية لعرض الشكل العام -->
-            <li class="teacher-card snap-start shrink-0 w-[280px]">
-              <article class="h-full rounded-2xl border border-gray-100 bg-white card-shadow overflow-hidden">
-                <div class="aspect-[4/3] bg-gradient-to-br from-green-50 to-amber-50 grid place-items-center">
-                  <div class="text-gray-500 text-sm">صورة المعلم</div>
-                </div>
-                <div class="p-4">
-                  <h3 class="font-extrabold text-lg">اسم المعلم</h3>
-                  <p class="text-sm text-gray-500">اللغة العربية</p>
-                </div>
-              </article>
-            </li>
-
-            <li class="teacher-card snap-start shrink-0 w-[280px]">
-              <article class="h-full rounded-2xl border border-gray-100 bg-white card-shadow overflow-hidden">
-                <div class="aspect-[4/3] bg-gradient-to-br from-green-50 to-amber-50 grid place-items-center">
-                  <div class="text-gray-500 text-sm">صورة المعلم</div>
-                </div>
-                <div class="p-4">
-                  <h3 class="font-extrabold text-lg">اسم المعلم</h3>
-                  <p class="text-sm text-gray-500">الرياضيات</p>
-                </div>
-              </article>
-            </li>
-
-            <li class="teacher-card snap-start shrink-0 w-[280px]">
-              <article class="h-full rounded-2xl border border-gray-100 bg-white card-shadow overflow-hidden">
-                <div class="aspect-[4/3] bg-gradient-to-br from-green-50 to-amber-50 grid place-items-center">
-                  <div class="text-gray-500 text-sm">صورة المعلم</div>
-                </div>
-                <div class="p-4">
-                  <h3 class="font-extrabold text-lg">اسم المعلم</h3>
-                  <p class="text-sm text-gray-500">العلوم</p>
-                </div>
-              </article>
-            </li>
-
-            <li class="teacher-card snap-start shrink-0 w-[280px]">
-              <article class="h-full rounded-2xl border border-gray-100 bg-white card-shadow overflow-hidden">
-                <div class="aspect-[4/3] bg-gradient-to-br from-green-50 to-amber-50 grid place-items-center">
-                  <div class="text-gray-500 text-sm">صورة المعلم</div>
-                </div>
-                <div class="p-4">
-                  <h3 class="font-extrabold text-lg">اسم المعلم</h3>
-                  <p class="text-sm text-gray-500">اللغة الإنجليزية</p>
-                </div>
-              </article>
-            </li>
-
-            <li class="teacher-card snap-start shrink-0 w-[280px]">
-              <article class="h-full rounded-2xl border border-gray-100 bg-white card-shadow overflow-hidden">
-                <div class="aspect-[4/3] bg-gradient-to-br from-green-50 to-amber-50 grid place-items-center">
-                  <div class="text-gray-500 text-sm">صورة المعلم</div>
-                </div>
-                <div class="p-4">
-                  <h3 class="font-extrabold text-lg">اسم المعلم</h3>
-                  <p class="text-sm text-gray-500">الاجتماعيات</p>
-                </div>
-              </article>
-            </li>
-
-            <li class="teacher-card snap-start shrink-0 w-[280px]">
-              <article class="h-full rounded-2xl border border-gray-100 bg-white card-shadow overflow-hidden">
-                <div class="aspect-[4/3] bg-gradient-to-br from-green-50 to-amber-50 grid place-items-center">
-                  <div class="text-gray-500 text-sm">صورة المعلم</div>
-                </div>
-                <div class="p-4">
-                  <h3 class="font-extrabold text-lg">اسم المعلم</h3>
-                  <p class="text-sm text-gray-500">الفيزياء</p>
-                </div>
-              </article>
-            </li>
-
-          </ul>
+      <div class="rounded-3xl border border-gray-100 bg-white p-8 card-shadow grid md:grid-cols-2 gap-6 items-center">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold mb-3">المعلمون</h2>
+          <p class="text-gray-600 mb-6">تعرّف على هيئة التدريس لدينا وخبراتهم ومؤهلاتهم.</p>
+          <a href="#"
+             class="inline-flex items-center gap-2 rounded-2xl px-6 py-3 font-bold border border-gray-200 hover:border-gray-300"
+             aria-label="انتقال إلى صفحة المدرسين">المدرسين</a>
+        </div>
+        <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-green-50 to-amber-50 grid place-items-center">
+          <div class="text-gray-500">صورة/إيضاح للهيئة</div>
         </div>
       </div>
+    </div>
+  </section>
 
+  <!-- قسم المتفوقون: رابط فقط -->
+  <section id="honors" class="py-16 sm:py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl border border-gray-100 bg-white p-8 card-shadow grid md:grid-cols-2 gap-6 items-center">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold mb-3">من تفوقوا بالقدرات</h2>
+          <p class="text-gray-600 mb-6">قائمة شرف للطلاب المتفوقين في اختبار القدرات.</p>
+          <a href="#"
+             class="inline-flex items-center gap-2 rounded-2xl px-6 py-3 font-bold border border-gray-200 hover:border-gray-300"
+             aria-label="انتقال إلى صفحة الطلاب المتفوقين">الطلاب المتفوقين</a>
+        </div>
+        <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-green-50 to-amber-50 grid place-items-center">
+          <div class="text-gray-500">صورة/إيضاح للتفوق</div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- التسجيل -->
-  <section id="admissions" class="py-16 sm:py-20 bg-gray-50">
+  <section id="admissions" class="py-16 sm:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="rounded-3xl border border-gray-100 bg-white p-8 sm:p-10 card-shadow grid md:grid-cols-2 gap-6">
         <div>
@@ -280,8 +179,8 @@
           <p class="text-gray-600 mb-6">ابدأ رحلة ابنك التعليمية معنا. فريق القبول يساعدك في اختيار المسار المناسب وتوفير المتطلبات.</p>
           <ul class="space-y-2 text-gray-700">
             <li>• الوثائق المطلوبة: الهوية، كرت التطعيم، آخر شهادة دراسية.</li>
-            <li>• مواعيد الدوام: من الأحد إلى الخميس — 7:00ص إلى 2:00م.</li>
-            <li>• النقل المدرسي والأنشطة متوفّرة.</li>
+            <li>• مواعيد الدوام: الأحد–الخميس — 7:00ص إلى 2:00م.</li>
+            <li>• النقل المدرسي والأنشطة متوفرة.</li>
           </ul>
         </div>
         <form class="grid gap-3">
@@ -292,10 +191,10 @@
           <div class="grid sm:grid-cols-2 gap-3">
             <input class="rounded-xl border border-gray-200 px-4 py-3" placeholder="اسم الطالب" />
             <select class="rounded-xl border border-gray-200 px-4 py-3 text-gray-600">
-              <option>اختر المرحلة</option>
-              <option>الابتدائية</option>
-              <option>المتوسطة</option>
-              <option>الثانوية</option>
+              <option>اختر المسار</option>
+              <option>علمي</option>
+              <option>إنساني</option>
+              <option>مسار آخر</option>
             </select>
           </div>
           <textarea class="rounded-xl border border-gray-200 px-4 py-3" rows="3" placeholder="ملاحظات"></textarea>
@@ -307,7 +206,7 @@
   </section>
 
   <!-- تواصل -->
-  <section id="contact" class="py-16 sm:py-20">
+  <section id="contact" class="py-16 sm:py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-3 gap-6">
         <div class="md:col-span-2">
@@ -348,52 +247,13 @@
 
   <footer class="border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-3">
-      <p class="text-sm text-gray-500">© <span id="year"></span> مدارس القلاف الأهلية. جميع الحقوق محفوظة.</p>
+      <p class="text-sm text-gray-500">© <span id="year"></span> مدارس القلاف الأهلية الثانوية. جميع الحقوق محفوظة.</p>
       <p class="text-sm text-gray-400">تصميم واجهة — قابل للتطوير وربطه بأنظمة إدارة مدرسية.</p>
     </div>
   </footer>
 
-  <script defer>
-    // سنة ديناميكية
+  <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // سلوك السلايدر للمعلمين
-    const track = document.getElementById('teacherTrack');
-    const btnNext = document.getElementById('btnNext');
-    const btnPrev = document.getElementById('btnPrev');
-
-    function getCardWidth(){
-      const first = track.querySelector('.teacher-card');
-      if(!first) return 320;
-      const style = getComputedStyle(first);
-      const gap = 16; // مسافة بين العناصر (gap-4)
-      return first.getBoundingClientRect().width + gap;
-    }
-
-    function updateArrows(){
-      const maxScrollLeft = track.scrollWidth - track.clientWidth - 1;
-      btnPrev.disabled = track.scrollLeft <= 0;
-      btnNext.disabled = track.scrollLeft >= maxScrollLeft;
-      btnPrev.style.opacity = btnPrev.disabled ? 0.5 : 1;
-      btnNext.style.opacity = btnNext.disabled ? 0.5 : 1;
-    }
-
-    btnNext.addEventListener('click', ()=>{
-      track.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
-    });
-    btnPrev.addEventListener('click', ()=>{
-      track.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
-    });
-    track.addEventListener('scroll', updateArrows, { passive: true });
-    window.addEventListener('resize', updateArrows);
-    document.addEventListener('DOMContentLoaded', updateArrows);
-
-    // سحب بالماوس لسطح المكتب (اختياري)
-    let isDown = false, startX = 0, startScroll = 0;
-    track.addEventListener('pointerdown', (e)=>{ isDown = true; startX = e.clientX; startScroll = track.scrollLeft; track.setPointerCapture(e.pointerId); });
-    track.addEventListener('pointermove', (e)=>{ if(!isDown) return; const dx = e.clientX - startX; track.scrollLeft = startScroll - dx; });
-    track.addEventListener('pointerup', ()=>{ isDown = false; });
-    track.addEventListener('pointercancel', ()=>{ isDown = false; });
   </script>
 </body>
 </html>
